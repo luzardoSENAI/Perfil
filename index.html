@@ -1,16 +1,167 @@
-<!-- index.html -->
-<html>
-  <head>
-    <link href="style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="cod.png" type="image/png">
-  </head>
-<title>Dev. Luzardo</title>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dev. Luzardo</title>
 
-  
-  <body>
-    <img src="foto.png" alt="Your Image" width="150">
+  <link rel="icon" href="Favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background: #000;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .content {
+      flex: 1;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding-bottom: 40px;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ffffff44;
+      box-shadow: 0 0 15px #ffffff33;
+      margin-bottom: 25px;
+    }
+
+    .title {
+      font-size: 3.5rem;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .btn {
+      width: 270px;
+      margin-top: 15px;
+      padding: 15px 20px;
+      background-color: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(4px);
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .btn i {
+      font-size: 1.2rem;
+      min-width: 24px;
+      text-align: center;
+    }
+
+    /* Cores específicas de cada botão, caso o senhor queira mudar */
+    .btn-ano1 {
+      border-color: #3b82f6;
+      color: #3b82f6;
+    }
+
+    .btn-ano1:hover {
+      background-color: #3b82f6;
+      color: #000;
+    }
+
+    .btn-ano3 {
+      border-color: #b91010;
+      color: #b91010;
+    }
+
+    .btn-ano3:hover {
+      background-color: #b91010;
+      color: #000;
+    }
+
+    .btn-aprendizado {
+      border-color: #facc15;
+      color: #facc15;
+    }
+
+    .btn-aprendizado:hover {
+      background-color: #facc15;
+      color: #000;
+    }
+
+    .btn-whatsapp {
+      border-color: #25D366;
+      color: #25D366;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #25D366;
+      color: #000;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      z-index: 1;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 2.2rem;
+      }
+
+      .btn {
+        width: 90%;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <img src="foto.png" alt="Your Image" width="150">
     
     <h1>Luzardo Lustosa</h1>
     <h2>Aspiring Software Developer</h2>
@@ -22,7 +173,80 @@
 <!-- <!--     <a href="https://drive.google.com/drive/folders/1b23ZCNq6Kw5ZoPlueasmg5CPDpvMxdUk?usp=drive_link"><i class="bi bi-cloud-upload-fill"></i> Aprendizado - 2025</a> -->
  
     <a href="https://drive.google.com/drive/folders/1Dzl19Q6iWB-NMM9EVv666D9gd2tKVUqZ?usp=sharing"></i> Tec</a>
+   <a href=" https://docs.google.com/forms/d/e/1FAIpQLSfINOoNDhsXXZSVU4vHXrjMr2F5KR4sR8sAFo6YqgNQ20ugzQ/viewform?usp=header</i> Quest</a>
     <a href="https://api.whatsapp.com/send?phone=5586999883494&text=Boa%20tarde%21%20Melhoras%21%20"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script> -->
-  </body>
+   
+  <div class="content">
+    <img class="profile-img" src="luzardo-foto.png" alt="Foto Luzardo" />
+    <div class="title">Luzardo Lustosa</div>
+
+    <button class="btn btn-ano1" onclick="window.open('https://drive.google.com/drive/folders/1vfV-ZAHL7QBalLtxaYTozSMnkOAcpOzy', '_blank')">
+      <i class="fab fa-google-drive"></i> 1º ano
+    </button>
+
+    <button class="btn btn-ano3">
+      <i class="fab fa-google-drive"></i> 3º ano
+    </button>
+
+    <button class="btn btn-aprendizado" onclick="window.open('https://drive.google.com/drive/folders/1b23ZCNq6Kw5ZoPlueasmg5CPDpvMxdUk')">
+      <i class="fab fa-google-drive"></i> Aprendizado 2025
+    </button>
+
+    <button class="btn btn-whatsapp" onclick="window.open('https://drive.google.com/drive/folders/1b23ZCNq6Kw5ZoPlueasmg5CPDpvMxdUk')">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </button>
+  </div>
+
+  <footer>
+    &copy; 2025 Luzardo Lustosa. Todos os direitos reservados.
+  </footer>
+
+  <!-- EFEITO DE PARTÍCULAS JS -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 }},
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.4 },
+        "size": { "value": 3, "random": true },
+        "line_linked": {
+          "enable": true,
+          "distance": 130,
+          "color": "#ffffff",
+          "opacity": 0.2,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 1.5,
+          "direction": "none",
+          "random": true,
+          "out_mode": "out",
+          "attract": {
+            "enable": true,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" },
+          "resize": true
+        },
+        "modes": {
+          "repulse": { "distance": 100, "duration": 0.4 },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
 </html>
+
+
