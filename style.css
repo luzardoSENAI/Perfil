@@ -1,8 +1,70 @@
-h1 {
-    color: blue;
-    font-size: 24px;
+body {
+    /* Zera margem do corpo do site. */
+    margin: 0;
+    /* Zera espaçamento interno */
+    padding: 0;
+    /* Altera cor de fundo do site */
+    background-color: #07acee;
+/* Altera a fonte do texto  */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Layount Site  */
+    display: flex;
+    /* deixa os elementos do site ao centro  */
+    justify-content: center;
+    /* Alinhamento Y - Vestical  */
+    align-items: center;
+    /* utilizar altura 100%  */
+    height: 100vh;
 }
 
-p {
-    color: green;
+.profile {
+    text-align: center;
+    color: rgb(73, 72, 72);
+
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.profile h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Botões de link */
+.links .btn {
+    display: block;
+    width: 100%;
+    background-color: white;
+    color: #2d2a52;
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.links .btn:hover {
+    background-color: #ddd;
+}
+
+#mensagem {
+    color: red;
 }
