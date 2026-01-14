@@ -1,33 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site Perfil</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="favicon.svg">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luzardo Lustosa | Dev & Professor SENAI</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍🏫</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍🏫</text></svg>">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+</head>
 <body>
 
-  <div class="profile">
-    <img src="foto.jpg" alt="FotoPerfil">
-    <h1>Luzardo Lustosa Silva</h1>
-    <h2>Dev SENAI</h2>
-    <p>Bem Vindo! a minha pagina!</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">LUZARDO<span>.DEV</span></a>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Jogos & Projetos</a></li>
+                <li><a href="#contato" class="btn-contato-nav">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="links">
-      <a href="facebook.com" class="btn">Instagram</a>
-      <a href="#" class="btn">TikTok</a>
-      <button class="btn" onclick="mostrarMensagem()">Clique aqui</button>
-      <p id="mensagem"></p>
-    </div>
-  </div>
-  <script>
-    function mostrarMensagem() {
-      document.getElementById("mensagem").innerText = "Olá, você clicou no botão!";
-    }
-  </script>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="profile-pic">
+                <i class="fas fa-user-tie"></i>
+            </div>
+            <h1>Luzardo Lustosa Silva</h1>
+            <h2 class="typing-text">Desenvolvedor Full Stack & Professor de Informática no <span>SENAI</span></h2>
+            <p>Transformando linhas de código em conhecimento e soluções inovadoras.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Com vasta experiência na área de tecnologia, atuo como instrutor no <strong>SENAI</strong>, capacitando novos talentos para o mercado de trabalho. Meu foco é unir a prática do desenvolvimento de software com a didática de ensino, criando ferramentas que facilitem o aprendizado, como jogos educativos e aplicações interativas.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">HTML5/CSS3</div>
+                    <div class="skill-tag">Ensino Técnico</div>
+                    <div class="skill-tag">Lógica de Programação</div>
+                    <div class="skill-tag">Web Design</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title">Atuação no SENAI</h2>
+            <div class="experience-card">
+                <div class="exp-header">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Docente na Área de Informática</h3>
+                </div>
+                <p>Responsável por ministrar disciplinas de desenvolvimento web, redes e suporte, focando na metodologia de ensino por competências e preparação de alunos para a indústria 4.0.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2 class="section-title">Hub de Jogos Educativos</h2>
+            <p class="subtitle">Desenvolvi uma série de jogos para estimular a memória e o raciocínio dos alunos.</p>
+            <div class="hub-link-card">
+                <i class="fas fa-gamepad"></i>
+                <h3>Portal de Jogos Luzardo Games</h3>
+                <p>Acesse minha coleção de jogos de memória e palavras cruzadas.</p>
+                <a href="URL_DO_SEU_PORTAL_AQUI" class="btn-link">Acessar Portal</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="footer">
+        <div class="container">
+            <p>Vamos conversar?</p>
+            <a href="mailto:seuemail@exemplo.com" class="email-link">seuemail@exemplo.com</a>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Desenvolvido por <strong>Luzardo Lustosa Silva</strong></p>
+            </div>
+        </div>
+    </footer>
+<a href="https://wa.me/5586999883494?text=Olá%20Luzardo,%20vim%20pelo seu%20portal!" 
+   class="whatsapp-float" 
+   target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span class="tooltip">Fale com o Prof. Luzardo</span>
+</a>
 </body>
 </html>
